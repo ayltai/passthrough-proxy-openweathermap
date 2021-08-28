@@ -17,4 +17,4 @@ app.get('/data/2.5/onecall', async (request, response) => {
     }
 });
 
-exports.handler = async (event, context, callback) => await app.serve(event, context, callback);
+exports.handler = async (event, context, callback) => app.serve(event, context, callback);
